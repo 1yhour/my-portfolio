@@ -1,10 +1,11 @@
-import Navbar from "./Components/Navbar.jsx";
+import Header from "./Components/Header.jsx";
 
 const App = () => {
     return (
-        <main>
-            <Navbar />
-        </main>
+        <div className="min-h-screen bg-white">
+            <Header />
+            <main></main>
+        </div>
     )
 }
 export default App

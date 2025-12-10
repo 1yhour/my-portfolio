@@ -1,1 +1,15 @@
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("./Assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("./Assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
 @import "tailwindcss";
+
+@theme{
+    --font-inter_bold: Inter-Bold ,"sans-serif";
+    --font-inter_regular: Inter-regular ,"sans-serif";
+}

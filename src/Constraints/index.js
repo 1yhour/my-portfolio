@@ -1,3 +1,4 @@
+
 export const navbar = [
     {text: 'About', link: 'about'},
     {text: 'Skills', link: 'skills'},
@@ -10,3 +11,9 @@ export function scrollToSection(id,setIsMenuOpen) {
     }
     setIsMenuOpen(false);
 };
+
+export const heroButtons = [
+    { text: "Get In Touch", link: "contact", variant: "primary" },
+    { text: "View Work", link: "skills", variant: "secondary" },
+];
+

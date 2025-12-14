@@ -8,5 +8,6 @@ export default defineConfig({
     plugins: [
         tailwindcss(), // Add the plugin call
         react(),
+
     ],
 })

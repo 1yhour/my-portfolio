@@ -16,7 +16,7 @@ const Header = () => {
                     <nav className="hidden md:flex items-center gap-8">
                         {navbar.map((item) => (
                             <div key={item.text} className="text-gray-700 hover:text-gray-900 transition-colors font-inter_regular">
-                                <button onClick={()=> scrollToSection(item.text)}>
+                                <button onClick={()=> scrollToSection(item.link)}>
                                     {item.text}
                                 </button>
                             </div>

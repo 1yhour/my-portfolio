@@ -2,6 +2,7 @@
 export const navbar = [
     {text: 'About', link: 'about'},
     {text: 'Skills', link: 'skills'},
+    {text: 'Projects', link: 'projects'},
     {text: 'Contact', link: 'contact'},
 ]
 export function scrollToSection(id,setIsMenuOpen) {

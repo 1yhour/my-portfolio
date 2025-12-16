@@ -60,7 +60,7 @@ const Hero = () => {
                     </div>
                     <div className="relative">
                         <div className="aspect-square rounded-full overflow-hidden bg-gray-100">
-                            <img src={MyPhoto} alt="my_photo" className="w-full h-full object-cover"/>
+                            <img src={MyPhoto} alt="my_photo" className="w-full h-full object-cover md:w-75% md:h-75%"/>
                         </div>
                     </div>
                 </div>

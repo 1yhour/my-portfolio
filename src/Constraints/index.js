@@ -1,4 +1,3 @@
-
 export const navbar = [
     {text: 'About', link: 'about'},
     {text: 'Skills', link: 'skills'},

@@ -1,3 +1,4 @@
+
 export const navbar = [
     {text: 'About', link: 'about'},
     {text: 'Skills', link: 'skills'},
@@ -17,3 +18,31 @@ export const heroButtons = [
     { text: "View Work", link: "skills", variant: "secondary" },
 ];
 
+import { SiJavascript, SiReact, SiPython, SiTailwindcss} from 'react-icons/si';
+
+export const skills = [
+    {
+        name: 'JavaScript',
+        percentage: 90,
+        icon: SiJavascript,
+        color: 'text-yellow-500'
+    },
+    {
+        name: 'React',
+        percentage: 85,
+        icon: SiReact,
+        color: 'text-cyan-400'
+    },
+    {
+        name: 'Python',
+        percentage: 70,
+        icon: SiPython,
+        color: 'text-blue-500'
+    },
+    {
+        name: 'Tailwind CSS',
+        percentage: 95,
+        icon: SiTailwindcss,
+        color: 'text-teal-400'
+    },
+];

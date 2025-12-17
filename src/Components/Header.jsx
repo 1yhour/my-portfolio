@@ -3,6 +3,7 @@ import {Menu , X} from "lucide-react";
 import {navbar} from "../Constraints/index.js";
 import {scrollToSection} from "../Constraints/index.js";
 
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (

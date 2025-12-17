@@ -8,7 +8,7 @@ const Skills = () => {
                 </div>
 
                 {/*This is called Destructure extracting values from objects or arrays into separate variables in a clean, short way*/}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto lg:max-w-5xl">
                     {skills.map(({ name, percentage, icon: SkillIcon, color }, index) => (
                         <div key={index} className="bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow px-8">
                             {/* Top Row: Icon and Name */}

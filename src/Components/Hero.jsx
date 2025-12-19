@@ -34,7 +34,7 @@ const Hero = () => {
                                 href="https://github.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                                className="p-2 text-gray-900 hover:text-gray-800 transition-colors "
                             >
                                 <FaGithub size={24}/>
                             </a>
@@ -43,7 +43,7 @@ const Hero = () => {
                                 href="https://www.linkedin.com/in/seng-lyhour-607851383/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                                className="p-2 text-blue-600 hover:text-blue-500 transition-colors"
                             >
                                 <FaLinkedin size={24}/>
                             </a>
@@ -51,7 +51,7 @@ const Hero = () => {
                                 href="mailto:lyhourlucky77@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                                className="p-2 text-green-500 hover:text-green-400 transition-colors"
                             >
                                 <MdMail size={24}/>
                             </a>

@@ -4,17 +4,20 @@ export const highlights = [
     {
         icon: Code2,
         title: 'Clean Code',
-        description: 'Writing maintainable, scalable, and efficient code that stands the test of time.'
+        description: 'Writing maintainable, scalable, and efficient code that stands the test of time.',
+        color: 'text-orange-400'
     },
     {
         icon: Palette,
         title: 'Design Focused',
-        description: 'Creating beautiful interfaces with attention to detail and user experience.'
+        description: 'Creating beautiful interfaces with attention to detail and user experience.',
+        color: 'text-green-500'
     },
     {
         icon: Rocket,
         title: 'Fast Delivery',
-        description: 'Turning ideas into reality quickly without compromising on quality.'
+        description: 'Turning ideas into reality quickly without compromising on quality.',
+        color: 'text-blue-500'
     }
 ]
 
@@ -27,7 +30,7 @@ const About = () => {
                     <p className="font-inter_regular text-gray-600 text-2md leading-7">
                         I am a passionate developer focused on building robust web applications and impactful digital experiences.
                         My greatest motivation is transforming complex technical challenges into <b>simple, intuitive, and beautiful solutions</b>.
-                        I have a solid foundation in <b> modern JavaScript, React</b> and <b>C#</b> honed through intensive academic projects and continuous self-learning.
+                        I have a solid foundation in <b> modern JavaScript, React</b> and <b>Java</b> honed through intensive academic projects and continuous self-learning.
                         I thrive on clean code, collaborative problem-solving, and utilizing technology to create measurable value.
                     </p>
                 </div>
@@ -35,7 +38,7 @@ const About = () => {
                     {highlights.map((highlight,index) => (
                         <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
                             <div className="flex items-center justify-center rounded-xl w-12 h-12 bg-gray-800 mb-6">
-                                <highlight.icon size={24} className="text-white"/>
+                                <highlight.icon size={24} className={highlight.color}/>
                             </div>
                             <h3 className="font-inter_bold mb-4">{highlight.title}</h3>
                             <p className="font-inter_regular">{highlight.description}</p>

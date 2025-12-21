@@ -1,6 +1,7 @@
 import {SiJavascript, SiReact, SiTailwindcss, SiHtml5, SiGit} from 'react-icons/si';
 import {FaJava} from "react-icons/fa";
-
+import chatbotImg from '../Assets/photos/chatbot.png';
+import tempImg from '../Assets/photos/temp.png';
 export const navbar = [
     {text: 'About', link: 'about'},
     {text: 'Skills', link: 'skills'},
@@ -50,7 +51,7 @@ export const skills = [
         name: 'Java',
         percentage: 50,
         icon: FaJava,
-        color: 'text-white'
+        color: 'text-orange-900'
     },
     {
         name: 'Git',
@@ -59,3 +60,21 @@ export const skills = [
         color: 'text-red-400'
     },
 ];
+
+export const projects = [
+    {
+        title: 'Chatbot',
+        description: 'I created a chatbot project using Python and Django that allows users to interact through a web interface.' +
+                     ' The chatbot uses Google services to manage and process user messages.' +
+                     ' This project helped me practice backend development, working with APIs, and building real-world applications using Django.',
+        image: chatbotImg,
+        tag: ["Python", "Django", "Google Services"]
+    },
+    {
+        title: 'Temperature Monitoring System',
+        description: 'I built an IoT project using ESP32 to measure temperature and upload the data to Firebase in real time.' +
+                     ' The system allows users to monitor temperature remotely and helped me understand sensor integration, Wi-Fi communication, and cloud databases.',
+        image: tempImg,
+        tag: ['C++', 'Html', 'Css', 'DHT']
+    }
+]

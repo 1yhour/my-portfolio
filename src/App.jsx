@@ -4,6 +4,8 @@ import About from "./Components/About.jsx";
 import Skills from "./Components/Skills.jsx";
 import Snowfall from "react-snowfall";
 import Projects from "./Components/Projects.jsx";
+import ContactMe from "./Components/ContactMe.jsx";
+import Footer from "./Components/Footer.jsx";
 const App = () => {
     return (
         <div className="min-h-screen bg-white">
@@ -22,7 +24,9 @@ const App = () => {
                 <About/>
                 <Skills/>
                 <Projects/>
+                <ContactMe/>
             </main>
+            <Footer/>
         </div>
     )
 }

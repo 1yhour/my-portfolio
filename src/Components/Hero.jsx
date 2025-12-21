@@ -1,8 +1,7 @@
 import React from 'react'
 import { heroButtons, scrollToSection} from "../Constraints/index.js";
-import {FaGithub, FaLinkedin} from "react-icons/fa";
-import {MdMail} from "react-icons/md";
 import MyPhoto from "../Assets/photos/anime_pic.jpg"
+import {iconLink} from "../Constraints/IconLink.js";
 const Hero = () => {
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center pt-16 px-4 lg:px-8">
@@ -30,32 +29,15 @@ const Hero = () => {
                             ))}
                         </div>
                         <div className="flex flex-wrap gap-4">
-                            <a
-                                href="https://github.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 text-gray-900 hover:text-gray-800 transition-colors "
-                            >
-                                <FaGithub size={24}/>
-                            </a>
-
-                            <a
-                                href="https://www.linkedin.com/in/seng-lyhour-607851383/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 text-blue-600 hover:text-blue-500 transition-colors"
-                            >
-                                <FaLinkedin size={24}/>
-                            </a>
-                            <a
-                                href="mailto:lyhourlucky77@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 text-green-500 hover:text-green-400 transition-colors"
-                            >
-                                <MdMail size={24}/>
-                            </a>
-
+                            {iconLink.map(({id,link,icon:Icon,color},index) => (
+                                <div key={index}>
+                                    <div className="p-2 transition-colors">
+                                        <a href={link} target="_blank" rel="noopener noreferrer" className={color}>
+                                            <Icon size={24}/>
+                                        </a>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className="relative">

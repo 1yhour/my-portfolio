@@ -1,5 +1,5 @@
-import {SiJavascript, SiReact, SiTailwindcss, SiHtml5, SiGit} from 'react-icons/si';
-import {FaJava} from "react-icons/fa";
+import {SiJavascript, SiReact, SiTailwindcss, SiGit} from 'react-icons/si';
+import {FaJava, FaPython} from "react-icons/fa";
 import chatbotImg from '../Assets/photos/chatbot.png';
 import tempImg from '../Assets/photos/temp.png';
 export const navbar = [
@@ -42,16 +42,16 @@ export const skills = [
         color: 'text-teal-400'
     },
     {
-        name: 'Html',
-        percentage: 90,
-        icon: SiHtml5,
+        name: 'Java',
+        percentage: 60,
+        icon: FaJava,
         color: 'text-orange-500'
     },
     {
-        name: 'Java',
+        name: 'Python',
         percentage: 50,
-        icon: FaJava,
-        color: 'text-orange-900'
+        icon: FaPython,
+        color: 'text-cyan-400'
     },
     {
         name: 'Git',
